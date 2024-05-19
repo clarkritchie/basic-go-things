@@ -44,3 +44,7 @@ func main() {
 func printArea(shape Shape) {
 	fmt.Printf("Area of the shape: %f\n", shape.area())
 }
+
+func getArea(shape Shape) float64 {
+	return shape.area()
+}
