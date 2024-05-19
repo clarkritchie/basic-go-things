@@ -25,7 +25,7 @@ func TestGetArea(t *testing.T) {
 	for _, tc := range testCases {
 		output := getArea(tc.shape)
 		if output != tc.expectedPrint {
-			t.Errorf("printArea output incorrect. Expected: %f, Got: %f", tc.expectedPrint, output)
+			t.Errorf("getArea output incorrect. Expected: %f, Got: %f", tc.expectedPrint, output)
 		}
 	}
 }
