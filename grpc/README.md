@@ -12,17 +12,6 @@ go run server/main.go
 go run client/main.go
 ```
 
-## Notes to Future Self
-
-- I think I originally installed `protoc-gen-go` and `protoc-gen-go-grpc` using `brew` which put me on the wrong path.
-- This is maybe all that I needed to do for dependencies (besides the obvious like `go` and `make`):
-```
-brew install protoc
-go install google.golang.org/protobuf/cmd/protoc-gen-go@latest
-go install google.golang.org/grpc/cmd/protoc-gen-go-grpc@latest
-export PATH="$PATH:$(go env GOPATH)/bin"
-```
-
 ## Example
 
 ### Server
@@ -40,3 +29,16 @@ export PATH="$PATH:$(go env GOPATH)/bin"
 ➜  grpc git:(main) go run client/main.go
 2024/05/20 10:51:25 Response from gRPC server's SayHello function: Hello world, the time is 2024-05-20 10:51:25
 ```
+
+## Notes to Future Self
+
+- I think I originally installed `protoc-gen-go` and `protoc-gen-go-grpc` using `brew` which put me on the wrong path.
+- This is maybe all that I needed to do for dependencies (besides the obvious like `go` and `make`):
+```
+brew install protoc
+go install google.golang.org/protobuf/cmd/protoc-gen-go@latest
+go install google.golang.org/grpc/cmd/protoc-gen-go-grpc@latest
+export PATH="$PATH:$(go env GOPATH)/bin"
+```
+
+
