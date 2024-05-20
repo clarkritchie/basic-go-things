@@ -9,3 +9,7 @@ make helloworld
 go run server/main.go
 go run client/main.go
 ```
+
+## Notes to Future Self
+
+- I think I originally installed `protoc-gen-go` using `brew` which put me on the wrong path.
