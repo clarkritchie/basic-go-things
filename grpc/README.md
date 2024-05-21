@@ -41,4 +41,6 @@ go install google.golang.org/grpc/cmd/protoc-gen-go-grpc@latest
 export PATH="$PATH:$(go env GOPATH)/bin"
 ```
 
+## Python Client
 
+- See [README](client-py/README.md)
